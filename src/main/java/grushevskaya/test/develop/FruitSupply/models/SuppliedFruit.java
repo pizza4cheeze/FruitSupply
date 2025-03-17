@@ -10,8 +10,8 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Entity
-@Table(name = "supplied_products")
-public class SuppliedProduct {
+@Table(name = "supplied_fruits")
+public class SuppliedFruit {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -24,7 +24,7 @@ public class SuppliedProduct {
     @Setter
     private Integer supplyId;
 
-    public SuppliedProduct(Integer fruitId, Double weight, Integer supplyId) {
+    public SuppliedFruit(Integer fruitId, Double weight, Integer supplyId) {
         this.fruitId = fruitId;
         this.weight = weight;
         this.supplyId = supplyId;
